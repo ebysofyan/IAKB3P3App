@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="89dp"
+    android:background="@color/green"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/appstore" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@id/img_detail"
+        android:layout_toRightOf="@id/img_profile"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="21dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_profesi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/txt_name"
+        android:layout_toLeftOf="@id/img_detail"
+        android:layout_toRightOf="@id/img_profile"
+        android:gravity="center_vertical"
+        android:text="@string/typing"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/img_detail"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_trash" />
+</RelativeLayout>
